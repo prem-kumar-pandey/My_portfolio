@@ -3,37 +3,124 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Prem Kumar Pandey | Portfolio</title>
+    <meta
+        name="description"
+        content="Portfolio of Prem Kumar Pandey - Computer Science student, programmer and web developer."
+    >
+
+    <meta
+        name="keywords"
+        content="Prem Kumar Pandey, Portfolio, Web Developer, Programmer, CSE Student, Java, Python, JavaScript"
+    >
+
+    <meta name="author" content="Prem Kumar Pandey">
+
+    <title>Portfolio | Prem Kumar Pandey</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
 
     <link rel="stylesheet" href="style.css">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
+    <div class="background-grid"></div>
 
-    <header>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+    <div class="background-glow glow-three"></div>
+
+    <header class="site-header">
 
         <nav class="navbar">
 
-            <h2 class="logo">
-                My<span>Portfolio</span>
-            </h2>
+            <a href="#home" class="logo">
+                Portfolio
+            </a>
+
+            <button
+                class="menu-icon"
+                id="menuIcon"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                type="button">
+
+                <i class="fas fa-bars"></i>
+
+            </button>
 
             <ul class="nav-links" id="navLinks">
 
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a
+                        href="#home"
+                        class="nav-link active">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#about"
+                        class="nav-link">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#services"
+                        class="nav-link">
+                        What I Do
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#skills"
+                        class="nav-link">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#projects"
+                        class="nav-link">
+                        Projects
+                    </a>
+                </li>
+
+              <li><a href="#internship" class="nav-link">Internship</a></li>
+
+                <li>
+                    <a
+                        href="#hobbies"
+                        class="nav-link">
+                        Hobbies
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#contact"
+                        class="nav-link">
+                        Contact
+                    </a>
+                </li>
 
             </ul>
 
@@ -41,529 +128,1460 @@
 
     </header>
 
-    <section class="home" id="home">
+    <main>
 
-        <div class="home-content">
+        <section
+            class="hero section"
+            id="home">
 
-            <p class="intro">Hello, I'm</p>
+            <div class="hero-content reveal">
 
-            <h1>Prem Kumar Pandey</h1>
+                <div class="available-badge">
 
-            <h2>
-                I'm <span id="typing"></span>
-            </h2>
+                    <span class="status-dot"></span>
 
-            <p>
-                I am a 3rd-year Computer Science student at
-                CMR University. I love programming, web development
-                and Artificial Intelligence.
-            </p>
+                    <span>
+                        Computer Science Student
+                    </span>
 
+                </div>
 
-            <div class="buttons">
+                <p class="hero-small-text">
+                    HELLO, I'M
+                </p>
 
-                <a href="#contact" class="btn">
-                    Contact Me
-                </a>
+                <h1>
+                    Prem Kumar
+                    <span>
+                        Pandey
+                    </span>
+                </h1>
 
-                <a href="#projects" class="btn secondary-btn">
-                    View Projects
-                </a>
+                <div class="hero-role">
 
-            </div>
+                    <span>
+                        I'm
+                    </span>
 
+                    <span id="typing"></span>
 
-            <div class="social-icons">
+                    <span class="typing-cursor">
+                        |
+                    </span>
 
+                </div>
 
-                <a href="https://www.linkedin.com/in/prem-kumar-pandey-0babba266/"
-                    target="_blank"
-                    title="LinkedIn">
+                <p class="hero-description">
 
-                    <i class="fab fa-linkedin"></i>
-
-                </a>
-
-
-                <a href="my_resume.pdf"
-                    target="_blank"
-                    title="Open Resume">
-
-                    <i class="fas fa-file-pdf"></i>
-
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="profile-card">
-
-            <img
-                src="SAVE_20240820_171406.jpg"
-                alt="Prem Kumar Pandey"
-                class="profile-image">
-
-        </div>
-
-    </section>
-
-    <section class="about section" id="about">
-
-        <h2 class="section-title">
-            About <span>Me</span>
-        </h2>
-
-
-        <div class="about-container">
-
-            <div class="about-text">
-
-                <h3>Computer Science Student</h3>
-
-                <p>
                     I am a 3rd-year Computer Science student at
                     <strong>CMR University</strong>.
-                    I am passionate about programming and technology.
+                    I enjoy programming, web development and exploring
+                    modern technologies to build useful digital experiences.
+
                 </p>
 
-                <p>
-                    My main areas of interest include
-                    <strong>
-                        Programming, Web Development
-                        and Artificial Intelligence.
-                    </strong>
-                </p>
+                <div class="hero-buttons">
 
-                <p>
-                    I am continuously learning new technologies and
-                    improving my programming skills by building projects.
-                </p>
+                    <a
+                        href="#projects"
+                        class="btn primary-btn">
 
-            </div>
+                        <span>
+                            View My Projects
+                        </span>
 
+                        <i class="fas fa-arrow-right"></i>
 
-            <div class="education-box">
+                    </a>
 
-                <i class="fas fa-graduation-cap"></i>
+                    <a
+                        href="#contact"
+                        class="btn outline-btn">
 
-                <h3>Education</h3>
+                        <i class="fas fa-paper-plane"></i>
 
-                <p>B.Tech in Computer Science</p>
+                        <span>
+                            Contact Me
+                        </span>
 
-                <p>CMR University</p>
+                    </a>
 
-                <p>3rd Year</p>
+                </div>
 
-            </div>
+                <div class="hero-social">
 
-        </div>
+                    <span class="social-label">
+                        Connect with me
+                    </span>
 
-    </section>
+                    <div class="social-links">
 
-    <section class="skills section" id="skills">
+                        <a
+                            href="https://github.com/prem-kumar-pandey"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub">
 
-        <h2 class="section-title">
-            My <span>Skills</span>
-        </h2>
+                            <i class="fab fa-github"></i>
 
+                        </a>
 
-        <div class="skills-container">
+                        <a
+                            href="https://www.linkedin.com/in/prem-kumar-pandey-0babba266/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn">
 
-            <div class="skill-card">
+                            <i class="fab fa-linkedin-in"></i>
 
-                <i class="fas fa-code"></i>
+                        </a>
 
-                <h3>Programming</h3>
+                        <a
+                            href="my_resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Resume">
 
-                <p>
-                    C, Java and Python
-                </p>
+                            <i class="fas fa-file-lines"></i>
 
-            </div>
-
-
-            <div class="skill-card">
-
-                <i class="fas fa-mobile-screen-button"></i>
-
-                <h3>App Development</h3>
-
-                <p>
-                    Interested in developing modern
-                    and useful applications.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <i class="fas fa-brain"></i>
-
-                <h3>Artificial Intelligence</h3>
-
-                <p>
-                    Interested in AI and intelligent
-                    applications.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <i class="fas fa-globe"></i>
-
-                <h3>Web Development</h3>
-
-                <p>
-                    HTML, CSS and JavaScript
-                </p>
-
-            </div>
-
-        </div>
-
-
-      <div class="skill-progress-container">
-
-    <div class="progress-skill">
-        <div class="progress-title">
-            <span>HTML</span>
-            <span>90%</span>
-        </div>
-        <div class="progress-bar">
-            <div class="progress" style="width: 90%;"></div>
-        </div>
-    </div>
-
-    <div class="progress-skill">
-        <div class="progress-title">
-            <span>CSS</span>
-            <span>85%</span>
-        </div>
-        <div class="progress-bar">
-            <div class="progress" style="width: 85%;"></div>
-        </div>
-    </div>
-
-    <div class="progress-skill">
-        <div class="progress-title">
-            <span>JavaScript</span>
-            <span>75%</span>
-        </div>
-        <div class="progress-bar">
-            <div class="progress" style="width: 75%;"></div>
-        </div>
-    </div>
-
-    <div class="progress-skill">
-        <div class="progress-title">
-            <span>Python</span>
-            <span>80%</span>
-        </div>
-        <div class="progress-bar">
-            <div class="progress" style="width: 80%;"></div>
-        </div>
-    </div>
-
-    <div class="progress-skill">
-        <div class="progress-title">
-            <span>Java</span>
-            <span>75%</span>
-        </div>
-        <div class="progress-bar">
-            <div class="progress" style="width: 75%;"></div>
-        </div>
-    </div>
-
-    <div class="progress-skill">
-        <div class="progress-title">
-            <span>C Programming</span>
-            <span>80%</span>
-        </div>
-        <div class="progress-bar">
-            <div class="progress" style="width: 80%;"></div>
-        </div>
-    </div>
-
-    <div class="progress-skill">
-        <div class="progress-title">
-            <span>Data Structures</span>
-            <span>75%</span>
-        </div>
-        <div class="progress-bar">
-            <div class="progress" style="width: 75%;"></div>
-        </div>
-    </div>
-
-    <div class="progress-skill">
-        <div class="progress-title">
-            <span>SQL</span>
-            <span>70%</span>
-        </div>
-        <div class="progress-bar">
-            <div class="progress" style="width: 70%;"></div>
-        </div>
-    </div>
-
-    <div class="progress-skill">
-        <div class="progress-title">
-            <span>Git & GitHub</span>
-            <span>70%</span>
-        </div>
-        <div class="progress-bar">
-            <div class="progress" style="width: 70%;"></div>
-        </div>
-    </div>
-
-    <div class="progress-skill">
-        <div class="progress-title">
-            <span>Web Development</span>
-            <span>85%</span>
-        </div>
-        <div class="progress-bar">
-            <div class="progress" style="width: 85%;"></div>
-        </div>
-    </div>
-
-</div>
-
-    </section>
-
-    <section class="projects section" id="projects">
-
-        <h2 class="section-title">
-            My <span>Projects</span>
-        </h2>
-
-
-        <div class="projects-container">
-
-
-            <div class="project-card">
-
-                <i class="fas fa-globe"></i>
-
-                <h3>Travel Website</h3>
-
-                <p>
-                    A travel website that provides information
-                    about destinations, tours and stays.
-                </p>
-
-                <a href="#" class="project-btn">
-                    View Project
-                </a>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <i class="fas fa-gamepad"></i>
-
-                <h3>Number Guessing Game</h3>
-
-                <p>
-                    An interactive number guessing game
-                    developed using Python.
-                </p>
-
-                <a href="#" class="project-btn">
-                    View Project
-                </a>
-
-            </div>
-
-
-
-            <div class="project-card">
-
-                <i class="fas fa-code"></i>
-
-                <h3>Code Analyser</h3>
-
-                <p>
-                    A useful application that analyses code
-                    and helps identify errors and improve
-                    code quality.
-                </p>
-
-                <a href="#" class="project-btn">
-                    View Project
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <section class="hobbies section" id="hobbies">
-
-        <h2 class="section-title">
-            My <span>Hobbies</span>
-        </h2>
-
-
-        <div class="hobbies-container">
-
-            <div class="hobby-card">
-
-                <i class="fas fa-baseball-bat-ball"></i>
-
-                <h3>Cricket</h3>
-
-                <p>
-                    I enjoy playing cricket in my free time.
-                </p>
-
-            </div>
-
-
-            <div class="hobby-card">
-
-                <i class="fas fa-table-tennis-paddle-ball"></i>
-
-                <h3>Badminton</h3>
-
-                <p>
-                    I enjoy playing badminton and staying active.
-                </p>
-
-            </div>
-
-
-            <div class="hobby-card">
-
-                <i class="fas fa-chess"></i>
-
-                <h3>Chess</h3>
-
-                <p>
-                    I enjoy playing chess and improving my
-                    strategic thinking skills.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <section class="contact section" id="contact">
-
-        <h2 class="section-title">
-            Contact <span>Me</span>
-        </h2>
-
-
-        <div class="contact-container">
-
-
-            <div class="contact-info">
-
-
-                <div class="contact-item">
-
-                    <i class="fas fa-phone"></i>
-
-                    <div>
-
-                        <h3>Phone</h3>
-
-                        <p>+9779816478023</p>
+                        </a>
 
                     </div>
 
                 </div>
 
+            </div>
 
+            <div class="hero-visual reveal">
 
-                <div class="contact-item">
+                <div class="profile-image-wrapper">
+
+                    <div class="profile-image-ring">
+
+                        <img
+                            src="prem.png"
+                            alt="Prem Kumar Pandey"
+                            class="profile-image"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section
+            class="section"
+            id="about">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">
+                    01
+                </span>
+
+                <div>
+
+                    <p class="section-label">
+                        ABOUT ME
+                    </p>
+
+                    <h2>
+                        About <span>Me</span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-main glass-card reveal">
+
+                    <div class="about-badge">
+                        <i class="fas fa-user"></i>
+                        WHO I AM
+                    </div>
+
+                    <h3>
+                        Building ideas into
+                        <span>digital experiences.</span>
+                    </h3>
+
+                    <p>
+                        I am a 3rd-year Computer Science and Engineering
+                        student at CMR University. I enjoy programming,
+                        building websites and learning new technologies.
+                    </p>
+
+                    <p>
+                        My goal is to continuously improve my technical
+                        skills and create practical, user-friendly
+                        applications that solve real-world problems.
+                    </p>
+
+                    <div class="about-tags">
+
+                        <span>
+                            <i class="fas fa-code"></i>
+                            Programming
+                        </span>
+
+                        <span>
+                            <i class="fas fa-globe"></i>
+                            Web Development
+                        </span>
+
+                        <span>
+                            <i class="fas fa-lightbulb"></i>
+                            Problem Solving
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="education-card glass-card reveal">
+
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+
+                    <span class="card-label">
+                        EDUCATION
+                    </span>
+
+                    <h3>
+                        B.Tech CSE
+                    </h3>
+
+                    <p>
+                        CMR University
+                    </p>
+
+                    <span class="education-status">
+                        3rd Year Student
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section
+            class="section"
+            id="services">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">
+                    02
+                </span>
+
+                <div>
+
+                    <p class="section-label">
+                        MY FOCUS
+                    </p>
+
+                    <h2>
+                        What I <span>Do</span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="services-grid">
+
+                <article class="service-card glass-card reveal">
+
+                    <div class="service-number">
+                        01
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+
+                    <h3>
+                        Programming
+                    </h3>
+
+                    <p>
+                        Writing clean and structured programs while
+                        continuously improving problem-solving and
+                        algorithmic thinking.
+                    </p>
+
+                    <div class="service-line"></div>
+
+                </article>
+
+                <article class="service-card glass-card reveal">
+
+                    <div class="service-number">
+                        02
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <p>
+                        Creating responsive websites with modern layouts,
+                        interactive components and user-friendly interfaces.
+                    </p>
+
+                    <div class="service-line"></div>
+
+                </article>
+
+                <article class="service-card glass-card reveal">
+
+                    <div class="service-number">
+                        03
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-screen-button"></i>
+                    </div>
+
+                    <h3>
+                        App Design
+                    </h3>
+
+                    <p>
+                        Designing clean digital experiences with a focus on
+                        usability, structure and modern visual presentation.
+                    </p>
+
+                    <div class="service-line"></div>
+
+                </article>
+
+                <article class="service-card glass-card reveal">
+
+                    <div class="service-number">
+                        04
+                    </div>
+
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+
+                    <h3>
+                        Technology Learning
+                    </h3>
+
+                    <p>
+                        Exploring new technologies and continuously building
+                        projects to strengthen practical development skills.
+                    </p>
+
+                    <div class="service-line"></div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section
+            class="section"
+            id="skills">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">
+                    03
+                </span>
+
+                <div>
+
+                    <p class="section-label">
+                        TECHNOLOGY
+                    </p>
+
+                    <h2>
+                        My <span>Skills</span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="skills-intro glass-card reveal">
+
+                <p>
+                    Technologies and concepts I have worked with while
+                    learning computer science and building projects.
+                </p>
+
+            </div>
+
+            <div class="skill-areas">
+
+                <div class="skill-area glass-card reveal">
+
+                    <div class="skill-area-header">
+
+                        <div class="skill-area-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+
+                        <div>
+                            <span>
+                                LANGUAGES
+                            </span>
+
+                            <h3>
+                                Programming
+                            </h3>
+                        </div>
+
+                    </div>
+
+                    <div class="technology-grid">
+
+                        <div class="technology-card">
+                            <i class="fas fa-c"></i>
+                            <span>C</span>
+                        </div>
+
+                        <div class="technology-card">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+
+                        <div class="technology-card">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+
+                        <div class="technology-card">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="skill-area glass-card reveal">
+
+                    <div class="skill-area-header">
+
+                        <div class="skill-area-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+
+                        <div>
+                            <span>
+                                DEVELOPMENT
+                            </span>
+
+                            <h3>
+                                Web Technologies
+                            </h3>
+                        </div>
+
+                    </div>
+
+                    <div class="technology-grid">
+
+                        <div class="technology-card">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+
+                        <div class="technology-card">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+
+                        <div class="technology-card">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="technology-card">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="skill-area glass-card reveal">
+
+                    <div class="skill-area-header">
+
+                        <div class="skill-area-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+
+                        <div>
+                            <span>
+                                CORE
+                            </span>
+
+                            <h3>
+                                Computer Science
+                            </h3>
+                        </div>
+
+                    </div>
+
+                    <div class="technology-grid">
+
+                        <div class="technology-card">
+                            <i class="fas fa-sitemap"></i>
+                            <span>Data Structures</span>
+                        </div>
+
+                        <div class="technology-card">
+                            <i class="fas fa-database"></i>
+                            <span>DBMS</span>
+                        </div>
+
+                        <div class="technology-card">
+                            <i class="fas fa-microchip"></i>
+                            <span>Operating Systems</span>
+                        </div>
+
+                        <div class="technology-card">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Networking</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="skill-area glass-card reveal">
+
+                    <div class="skill-area-header">
+
+                        <div class="skill-area-icon">
+                            <i class="fas fa-toolbox"></i>
+                        </div>
+
+                        <div>
+                            <span>
+                                TOOLS
+                            </span>
+
+                            <h3>
+                                Development Tools
+                            </h3>
+                        </div>
+
+                    </div>
+
+                    <div class="technology-grid">
+
+                        <div class="technology-card">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+
+                        <div class="technology-card">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+
+                        <div class="technology-card">
+                            <i class="fas fa-terminal"></i>
+                            <span>VS Code</span>
+                        </div>
+
+                        <div class="technology-card">
+                            <i class="fas fa-server"></i>
+                            <span>XAMPP</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section
+            class="section"
+            id="projects">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">
+                    04
+                </span>
+
+                <div>
+
+                    <p class="section-label">
+                        MY WORK
+                    </p>
+
+                    <h2>
+                        Featured <span>Projects</span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card glass-card reveal">
+
+                    <div class="project-top">
+
+                        <div class="project-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+
+                        <span class="project-number">
+                            01
+                        </span>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            WEB DEVELOPMENT
+                        </span>
+
+                        <h3>
+                            Travel Website
+                        </h3>
+
+                        <p>
+                            A responsive travel website designed to help
+                            users explore destinations, discover places
+                            and plan their travel experience through a
+                            clean and engaging interface.
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-footer">
+
+                        <a
+                            href="https://github.com/prem-kumar-pandey"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link">
+
+                            View on GitHub
+
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card glass-card reveal">
+
+                    <div class="project-top">
+
+                        <div class="project-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+
+                        <span class="project-number">
+                            02
+                        </span>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            EDUCATION PLATFORM
+                        </span>
+
+                        <h3>
+                            StudyShare
+                        </h3>
+
+                        <p>
+                            A college study-material sharing platform
+                            where students can discover, upload and
+                            share notes and academic resources with
+                            their classmates.
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-footer">
+
+                        <a
+                            href="https://github.com/prem-kumar-pandey"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link">
+
+                            View on GitHub
+
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card glass-card reveal">
+
+                    <div class="project-top">
+
+                        <div class="project-icon">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+
+                        <span class="project-number">
+                            03
+                        </span>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            ONLINE EXAMINATION SYSTEM
+                        </span>
+
+                        <h3>
+                            SecureExam
+                        </h3>
+
+                        <p>
+                            A secure online examination platform designed
+                            for teachers and students, featuring exam
+                            management, student access, performance
+                            tracking and a focused examination experience.
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-footer">
+
+                        <a
+                            href="https://github.com/prem-kumar-pandey"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link">
+
+                            View on GitHub
+
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="projects-bottom reveal">
+
+                <p>
+                    More projects and experiments are available on my GitHub.
+                </p>
+
+                <a
+                    href="https://github.com/prem-kumar-pandey"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="github-btn">
+
+                    <i class="fab fa-github"></i>
+
+                    Explore GitHub
+
+                    <i class="fas fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <section
+    class="section"
+    id="internship">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">
+                    05
+                </span>
+
+                <div>
+
+                    <p class="section-label">
+                        LEARNING & CREDENTIALS
+                    </p>
+
+                    <h2>
+                        Online <span>Internship</span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="certifications-grid">
+
+                <article class="certification-card glass-card reveal">
+
+                    <div class="certification-top">
+
+                        <div class="certification-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+
+                        <span class="certification-number">
+                            01
+                        </span>
+
+                    </div>
+
+                    <div class="certification-content">
+
+                        <span class="certification-label">
+                            ONLINE CERTIFICATION
+                        </span>
+
+                        <h3>
+                            Add Your Certification
+                        </h3>
+
+                        <p>
+                            Add the name of your online certification,
+                            course provider and the skills you gained.
+                        </p>
+
+                        <div class="certification-meta">
+
+                            <span>
+                                <i class="fas fa-building"></i>
+                                Issuing Platform
+                            </span>
+
+                            <span>
+                                <i class="fas fa-calendar"></i>
+                                Year
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="certification-footer">
+
+                        <a
+                            href="#"
+                            class="certification-link">
+
+                            View Credential
+
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="certification-card glass-card reveal">
+
+                    <div class="certification-top">
+
+                        <div class="certification-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+
+                        <span class="certification-number">
+                            02
+                        </span>
+
+                    </div>
+
+                    <div class="certification-content">
+
+                        <span class="certification-label">
+                            ONLINE CERTIFICATION
+                        </span>
+
+                        <h3>
+                            Programming Certification
+                        </h3>
+
+                        <p>
+                            Add your programming certification,
+                            course provider and the skills covered
+                            in the certification.
+                        </p>
+
+                        <div class="certification-meta">
+
+                            <span>
+                                <i class="fas fa-building"></i>
+                                Issuing Platform
+                            </span>
+
+                            <span>
+                                <i class="fas fa-calendar"></i>
+                                Year
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="certification-footer">
+
+                        <a
+                            href="#"
+                            class="certification-link">
+
+                            View Credential
+
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="certification-card glass-card reveal">
+
+                    <div class="certification-top">
+
+                        <div class="certification-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+
+                        <span class="certification-number">
+                            03
+                        </span>
+
+                    </div>
+
+                    <div class="certification-content">
+
+                        <span class="certification-label">
+                            ONLINE CERTIFICATION
+                        </span>
+
+                        <h3>
+                            Database / SQL Certification
+                        </h3>
+
+                        <p>
+                            Add your database or SQL certification,
+                            provider and the main topics covered.
+                        </p>
+
+                        <div class="certification-meta">
+
+                            <span>
+                                <i class="fas fa-building"></i>
+                                Issuing Platform
+                            </span>
+
+                            <span>
+                                <i class="fas fa-calendar"></i>
+                                Year
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="certification-footer">
+
+                        <a
+                            href="#"
+                            class="certification-link">
+
+                            View Credential
+
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section
+            class="section"
+            id="hobbies">
+
+            <div class="section-heading centered reveal">
+
+                <span class="section-number">
+                    06
+                </span>
+
+                <div>
+
+                    <p class="section-label">
+                        BEYOND CODE
+                    </p>
+
+                    <h2>
+                        My <span>Hobbies</span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="hobbies-grid">
+
+                <article class="hobby-card glass-card reveal">
+
+                    <div class="hobby-icon">
+                        <i class="fas fa-baseball-bat-ball"></i>
+                    </div>
+
+                    <div class="hobby-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Cricket
+                    </h3>
+
+                    <p>
+                        I enjoy playing cricket in my free time.
+                    </p>
+
+                </article>
+
+                <article class="hobby-card glass-card reveal">
+
+                    <div class="hobby-icon">
+                        <i class="fas fa-table-tennis-paddle-ball"></i>
+                    </div>
+
+                    <div class="hobby-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Badminton
+                    </h3>
+
+                    <p>
+                        I enjoy playing badminton and staying active.
+                    </p>
+
+                </article>
+
+                <article class="hobby-card glass-card reveal">
+
+                    <div class="hobby-icon">
+                        <i class="fas fa-chess"></i>
+                    </div>
+
+                    <div class="hobby-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Chess
+                    </h3>
+
+                    <p>
+                        I enjoy playing chess and improving my
+                        strategic thinking.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section
+            class="section contact-section"
+            id="contact">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">
+                    07
+                </span>
+
+                <div>
+
+                    <p class="section-label">
+                        GET IN TOUCH
+                    </p>
+
+                    <h2>
+                        Let's <span>Connect</span>
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="contact-left reveal">
+
+                    <div class="contact-intro">
+
+                        <div class="contact-badge">
+
+                            <i class="fas fa-paper-plane"></i>
+
+                            Open to connecting
+
+                        </div>
+
+                        <h3>
+                            Have an idea or
+                            <span>opportunity?</span>
+                        </h3>
+
+                        <p>
+                            Feel free to reach out. Whether you want
+                            to discuss a project, technology or simply
+                            connect, I'd be happy to hear from you.
+                        </p>
+
+                    </div>
+
+                    <div class="contact-details">
+
+                        <a
+                            href="mailto:pandeyprem614@gmail.com"
+                            class="contact-detail glass-card"
+                            aria-label="Send email">
+
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    EMAIL
+                                </span>
+
+                                <strong>
+                                    pandeyprem614@gmail.com
+                                </strong>
+
+                            </div>
+
+                            <i
+                                class="fas fa-arrow-up-right-from-square contact-arrow">
+                            </i>
+
+                        </a>
+
+                        <a
+                            href="tel:+9779816478023"
+                            class="contact-detail glass-card"
+                            aria-label="Call phone number">
+
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    PHONE
+                                </span>
+
+                                <strong>
+                                    +9779816478023
+                                </strong>
+
+                            </div>
+
+                            <i
+                                class="fas fa-arrow-up-right-from-square contact-arrow">
+                            </i>
+
+                        </a>
+
+                        <div class="contact-detail glass-card">
+
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    UNIVERSITY
+                                </span>
+
+                                <strong>
+                                    CMR University
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <form
+                    id="contactForm"
+                    class="contact-form glass-card reveal">
+
+                    <div class="form-heading">
+
+                        <span>
+                            MESSAGE ME
+                        </span>
+
+                        <h3>
+                            Send a Message
+                        </h3>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="contactName">
+                            Your Name
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fas fa-user"></i>
+
+                            <input
+                                type="text"
+                                id="contactName"
+                                name="name"
+                                placeholder="Enter your name"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="contactEmail">
+                            Your Email
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fas fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="contactEmail"
+                                name="email"
+                                placeholder="Enter your email"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="message">
+                            Your Message
+                        </label>
+
+                        <div class="input-wrapper textarea-wrapper">
+
+                            <i class="fas fa-message"></i>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Write your message..."
+                                required></textarea>
+
+                        </div>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="btn primary-btn submit-btn">
+
+                        <span>
+                            Send Message
+                        </span>
+
+                        <i class="fas fa-paper-plane"></i>
+
+                    </button>
+
+                    <p class="form-note">
+
+                        <i class="fas fa-shield-halved"></i>
+
+                        Your message is handled securely.
+
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a
+                    href="#home"
+                    class="logo">
+
+                    Portfolio
+
+                </a>
+
+                <p>
+                    Prem Kumar Pandey
+                </p>
+
+            </div>
+
+            <div class="footer-social">
+
+                <a
+                    href="https://github.com/prem-kumar-pandey"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/prem-kumar-pandey-0babba266/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+
+                    <i class="fab fa-linkedin-in"></i>
+
+                </a>
+
+                <a
+                    href="mailto:pandeyprem614@gmail.com"
+                    aria-label="Email">
 
                     <i class="fas fa-envelope"></i>
 
-                    <div>
-
-                        <h3>Email</h3>
-
-                        <p>pandeyprem614@gmail.com</p>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="contact-item">
-
-                    <i class="fas fa-university"></i>
-
-                    <div>
-
-                        <h3>University</h3>
-
-                        <p>CMR University</p>
-
-                    </div>
-
-                </div>
+                </a>
 
             </div>
 
-
-
-            <form id="contactForm">
-
-                <input
-                    type="text"
-                    id="contactName"
-                    placeholder="Your Name"
-                    required>
-
-                <input
-                    type="email"
-                    id="contactEmail"
-                    placeholder="Your Email"
-                    required>
-
-                <textarea
-                    id="message"
-                    rows="6"
-                    placeholder="Your Message"
-                    required></textarea>
-
-                <button type="submit" class="btn">
-                    Send Message
-                </button>
-
-            </form>
+            <p class="footer-copy">
+                © 2026 Prem Kumar Pandey. All rights reserved.
+            </p>
 
         </div>
 
-    </section>
-
-
-    <footer>
-
-        <p>
-            © 2026 Prem Kumar Pandey. All Rights Reserved.
-        </p>
-
-        <p>
-            Made By Prem Kumar Pandey
-        </p>
-
     </footer>
 
+    <div
+        class="toast"
+        id="toast"
+        role="status"
+        aria-live="polite">
+
+        <div class="toast-icon">
+            <i class="fas fa-check"></i>
+        </div>
+
+        <div>
+
+            <strong>
+                Message Ready
+            </strong>
+
+            <span>
+                Your message has been received.
+            </span>
+
+        </div>
+
+    </div>
+
+    <button
+        class="back-to-top"
+        id="backToTop"
+        aria-label="Back to top"
+        type="button">
+
+        <i class="fas fa-arrow-up"></i>
+
+    </button>
 
     <script src="script.js"></script>
 
